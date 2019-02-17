@@ -23,8 +23,18 @@ body {
 }
 
 @keyframes bgScroll {
-    0% {background-position-y: 0vhw}
+    0% {background-position-y: 0vw}
     100% {background-position-y: 1000vw;}
+}
+
+@keyframes bgScrollWindow {
+    0% {background-position-x: -120vw}
+    100% {background-position-x: 0vw}
+}
+
+@keyframes topLayerScroll {
+    0% {background-position-x: -995vw}
+    100% {background-position-x: 0vw}
 }
 
 .container {
@@ -37,15 +47,28 @@ body {
     z-index: -1;
 }  
 
-#earth {
+#portfolio {
     position: absolute;
-    background-image: url('./earth.png');
+    background-image: url('./space.png');
     background-repeat: no-repeat;
-    background-size: 100vw 100vw;
+    background-size: 205.27vw 100vw;
     background-position-y: -12vw;
-    width: 100vw;
+    background-position-x: -120vw;
+    width: 205.27vw;
     height: 100vw;
     z-index: -2;
+}
+
+#topLayer {
+    position: absolute;
+    background-image: url('./topLayer.png');
+    background-repeat: no-repeat;
+    background-size: 1098.9vw 100vw;
+    background-position-y: -12vw;
+    background-position-x: -999vw;
+    width: 1098.9vw;
+    height: 100vw;
+    z-index: -1;
 }
 
 /* html {

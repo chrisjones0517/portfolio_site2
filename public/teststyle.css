@@ -1,0 +1,11 @@
+#portfolio {
+    position: absolute;
+    background-image: url('./earth.png');
+    background-repeat: no-repeat;
+    background-size: 1000vw 100vw;
+    background-position-y: -12vw;
+    background-position-x: -857vw;
+    width: 1000vw;
+    height: 100vw;
+    z-index: -2;
+}

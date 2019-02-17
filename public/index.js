@@ -27,8 +27,12 @@ $(document).ready(() => {
                 'background-position': 'top',
                 'z-index': '-1'
             });
-            $('.container').prepend('<div id="earth"></div>');
+            $('.container').prepend('<div id="portfolio"><div id="topLayer"></div></div>');
             $('#launchSound').currentTime = 0;
+            $('body').append('<iframe src="https://www.youtube.com/embed/iYYRH4apXDo?start=30&autoplay=1" style="display:none" allow="autoplay"></iframe>');
+            $('#portfolio').css('animation', 'bgScrollWindow 500s linear 1');
+            $('#topLayer').css('animation', 'topLayerScroll 1000s linear 1');
         }, 25000);
     });
 });
+
